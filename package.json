@@ -1,0 +1,73 @@
+{
+  "name": "mostlydevstuff",
+  "version": "0.0.0",
+  "description": "Gasket app for mostlydevstuff.com",
+  "scripts": {
+    "build": "gasket build",
+    "start": "gasket start",
+    "local": "gasket local",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "npm run lint -- --fix",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "posttest": "npm run lint && npm run stylelint"
+  },
+  "dependencies": {
+    "@gasket/assets": "^6.0.12",
+    "@gasket/cli": "^6.3.0",
+    "@gasket/log": "^6.1.0",
+    "@gasket/nextjs": "^6.0.12",
+    "@gasket/plugin-config": "^6.2.0",
+    "@gasket/plugin-express": "^6.0.12",
+    "@gasket/plugin-git": "^6.2.0",
+    "@gasket/plugin-jest": "^6.0.12",
+    "@gasket/plugin-lint": "^6.3.0",
+    "@gasket/plugin-log": "^6.1.0",
+    "@gasket/plugin-manifest": "^6.0.12",
+    "@gasket/plugin-service-worker": "^6.0.12",
+    "@gasket/plugin-swagger": "^6.0.12",
+    "@gasket/plugin-webpack": "^6.0.12",
+    "@gasket/plugin-workbox": "^6.0.12",
+    "@gasket/preset-nextjs": "^6.3.0",
+    "@gasket/redux": "^6.1.0",
+    "express": "^4.16.3",
+    "lodash.merge": "^4.6.0",
+    "next": "^10.0.5",
+    "next-redux-wrapper": "^6.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": ">=6.0.0",
+    "eslint-config-godaddy-react": "^7.0.0",
+    "jest": "^26.6.3",
+    "stylelint": "^12.0.0",
+    "stylelint-config-godaddy": "^0.4.0",
+    "webpack": "^5.21.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "godaddy-react"
+    ],
+    "env": {
+      "jest": true
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-godaddy"
+    ]
+  },
+  "eslintIgnore": [
+    "coverage/",
+    "build/"
+  ]
+}
