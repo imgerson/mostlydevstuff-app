@@ -18,8 +18,8 @@ Head.propTypes = {
 };
 
 Head.defaultProps = {
-  title: 'mostlydevstuff',
-  description: 'Gasket app for mostlydevstuff.com'
+  title: 'Mostly Dev Stuff',
+  description: 'Repository for my day to day learning in tech'
 };
 
 export default Head;

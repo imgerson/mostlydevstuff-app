@@ -5,7 +5,7 @@ Gasket app for mostlydevstuff.com
 ## Setup
 
 ```bash
-cd mostlydevstuff
+cd mostlydevstuff-app
 
 npm install
 

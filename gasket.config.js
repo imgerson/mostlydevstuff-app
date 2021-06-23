@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   plugins: {
     presets: [
@@ -33,6 +35,9 @@ module.exports = {
   nextConfig: {
     future: {
       webpack5: true
+    },
+    sassOptions: {
+      includePaths: [path.join(__dirname, 'styles')]
     }
   }
 };
