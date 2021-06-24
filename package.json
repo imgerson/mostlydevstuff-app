@@ -16,6 +16,8 @@
     "posttest": "npm run lint && npm run stylelint"
   },
   "dependencies": {
+    "@fontsource/libre-franklin": "^4.4.5",
+    "@fontsource/roboto": "^4.4.5",
     "@gasket/assets": "^6.0.12",
     "@gasket/cli": "^6.3.0",
     "@gasket/fetch": "^6.0.12",
