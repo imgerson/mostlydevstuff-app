@@ -4,7 +4,7 @@ const getPost = async (req, res) => {
   const { slug } = req.query;
 
   try {
-    const apiResponse = await fetch(`${req.config.mostlydevstuff_rest_api}/posts?slug=${slug}`);
+    const apiResponse = await fetch(`https://mostlydevstuff.com/wp-json/wp/v2/posts?slug=${slug}`);
     const apiResponseJSON = await apiResponse.json();
 
     return res.status(apiResponse.status).send(apiResponseJSON);

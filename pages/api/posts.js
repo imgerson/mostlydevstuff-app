@@ -2,7 +2,7 @@ import fetch from '@gasket/fetch';
 
 const getPosts = async (req, res) => {
   try {
-    const apiResponse = await fetch(`${req.config.mostlydevstuff_rest_api}/posts`);
+    const apiResponse = await fetch('https://mostlydevstuff.com/wp-json/wp/v2/posts');
     const apiResponseJSON = await apiResponse.json();
 
     return res.status(apiResponse.status).send(apiResponseJSON);
