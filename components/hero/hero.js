@@ -48,7 +48,11 @@ const Hero = () => {
         </p>
       </div>
       <div className={ styles.image }>
-        <img src='/gerson-ruiz-barcelona.jpeg' alt='Gerson Ruiz in a bike' />
+        <picture>
+          <source type='image/webp' srcSet='/gerson-ruiz-barcelona.webp' />
+          <source type='image/jpeg' srcSet='/gerson-ruiz-barcelona.jpeg' />
+          <img src='/gerson-ruiz-barcelona.jpeg' alt='Gerson Ruiz in a bike' width='665' height='500' />
+        </picture>
       </div>
     </div>
   );
