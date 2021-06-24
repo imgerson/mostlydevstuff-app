@@ -11,6 +11,11 @@ h2 {
   font-weight: 200;
 }
 
+h3 {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
 h1,
 h2,
 h3,
@@ -20,11 +25,13 @@ h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-p {
+p,
+li {
   font-size: 1.2rem;
 }
 
+
 body,
-body[data-theme='light'] {
-  --color-text-underlined: #fccbc7;
+body[data-theme='light'] { /* stylelint-disable-line selector-no-qualifying-type */
+  --color-text-underlined: rgb(252, 203, 199);
 }

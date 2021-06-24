@@ -7,7 +7,6 @@ module.exports = {
     ],
     add: [
       '@gasket/config',
-      '@gasket/express',
       '@gasket/git',
       '@gasket/lint',
       '@gasket/manifest',

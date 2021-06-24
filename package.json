@@ -18,6 +18,7 @@
   "dependencies": {
     "@gasket/assets": "^6.0.12",
     "@gasket/cli": "^6.3.0",
+    "@gasket/fetch": "^6.0.12",
     "@gasket/log": "^6.1.0",
     "@gasket/nextjs": "^6.0.12",
     "@gasket/plugin-config": "^6.2.0",
