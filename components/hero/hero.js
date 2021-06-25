@@ -9,8 +9,8 @@ const ICONS = {
 
 const Hero = () => {
   return (
-    <div className={ styles.hero }>
-      <div className={ styles.info }>
+    <div className={ `content-wrapper ${styles.hero}` }>
+      <div className={ `content ${styles.info}` }>
         <h1>Hi, I&apos;m Gerson Ruiz!</h1>
         <h2>
           Software development engineer <span role='img' aria-label='man-technologist'>👨🏾‍💻</span>
@@ -18,6 +18,15 @@ const Hero = () => {
           &amp; amateur chess player <span role='img' aria-label='crown'>👑</span>
         </h2>
         <p><span className={ styles.cta }>Follow me on all the things:</span>
+          <a href='https://github.com/imgerson/'>
+            <img
+              src='github.svg'
+              alt='GitHub icon'
+              width={ ICONS.WIDTH }
+              height={ ICONS.HEIGHT }
+              className={ styles.icon }
+            />
+          </a>
           <a href='https://twitter.com/imgersonr'>
             <img
               src='twitter.svg'

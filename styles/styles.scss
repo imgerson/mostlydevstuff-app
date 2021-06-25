@@ -35,3 +35,12 @@ body,
 body[data-theme='light'] { /* stylelint-disable-line selector-no-qualifying-type */
   --color-text-underlined: rgb(252, 203, 199);
 }
+
+.content-wrapper {
+  max-width: 80%;
+  margin: 0 auto 60px;
+}
+
+.content {
+  padding: 0 100px;
+}

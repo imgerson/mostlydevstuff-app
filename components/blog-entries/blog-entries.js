@@ -11,12 +11,10 @@ const BlogEntries = ({ posts }) => {
         <h3>Latests blog posts</h3>
         <ul className={ styles.list }>
           { posts && posts.map((entry, key) => {
-            const dateObj = new Date(entry.date);
-
             return (
               <li key={ key } className={ styles.item } >
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <Link href={ `/${dateObj.getFullYear()}/${entry.slug}` }><a>{ entry.title.rendered }</a></Link>
+                <Link href={ `/${entry.slug}` }><a>{ entry.title.rendered }</a></Link>
               </li>
             );
           }) }
