@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BlogEntry from '../components/blog-entry/blog-entry';
 
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import { fetchPosts, fetchPost } from '../lib/api';
 
 const BlogPost = ({ post }) => {
