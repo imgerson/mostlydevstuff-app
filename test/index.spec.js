@@ -9,4 +9,3 @@ describe('IndexPage', () => {
     expect(wrapper.find(Head)).toHaveLength(1);
   });
 });
-
