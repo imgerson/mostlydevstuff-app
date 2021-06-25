@@ -5,7 +5,7 @@ import Head from '../components/head';
 
 describe('IndexPage', () => {
   it('shallow renders', () => {
-    const wrapper = shallow(<IndexPage />);
+    const wrapper = shallow(<IndexPage posts={ [] } />);
     expect(wrapper.find(Head)).toHaveLength(1);
   });
 });

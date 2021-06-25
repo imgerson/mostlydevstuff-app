@@ -3,6 +3,8 @@ module.exports = {
   collectCoverageFrom: ['**/*.js'],
   testURL: 'http://localhost/',
   moduleNameMapper: {
-    '\\.(css|less|scss)$': 'identity-obj-proxy'
+    '\\.(css|less|scss)$': 'identity-obj-proxy',
+    '@fontsource/libre-franklin': 'identity-obj-proxy',
+    '@fontsource/roboto': 'identity-obj-proxy'
   }
 };
